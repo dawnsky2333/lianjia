@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 
 
-raw = pd.read_csv('D:\\Git\\Repositories\\lianjia\\cd_information.csv')
+raw = pd.read_csv('D:/Git/Repositories/lianjia/lianjia/spiders/cd_information.csv')
 
 raw['Renovation1'] = raw['Renovation'].map({'精装': 3, '简装': 2, '毛坯': 1, '其他': 0})
 # 将不同的朝向分别单独出来一列

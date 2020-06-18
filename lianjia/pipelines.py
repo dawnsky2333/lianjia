@@ -6,7 +6,6 @@
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 import csv
 
-from scrapy.exporters import CsvItemExporter
 
 class LianjiaPipeline(object):
     def process_item(self, item, spider):
@@ -17,3 +16,4 @@ class LianjiaPipeline(object):
             w = csv.writer(f)
             w.writerow(args)
         return item
+
