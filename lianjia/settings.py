@@ -21,35 +21,28 @@ NEWSPIDER_MODULE = 'lianjia.spiders'
 # 设置UA
 import random
 USER_AGENT_LIST = [
-    'MSIE (MSIE 6.0; X11; Linux; i686) Opera 7.23',
-    'Opera/9.20 (Macintosh; Intel Mac OS X; U; en)',
-    'Opera/9.0 (Macintosh; PPC Mac OS X; U; en)',
-    'iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)',
-    'Mozilla/4.76 [en_jp] (X11; U; SunOS 5.8    sun4u)',
-    'iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:5.0) Gecko/20100101 Firefox/5.0',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0) Gecko/20100101 Firefox/9.0',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20120813 Firefox/16.0',
-    'Mozilla/4.77 [en] (X11; I; IRIX;64 6.5 IP30)',
-    'Mozilla/4.8 [en] (X11; U; SunOS; 5.7 sun4u)'
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11",
+    "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.133 Safari/534.16",
 ]
 USER_AGENT = random.choice(USER_AGENT_LIST)
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+# CONCURRENT_REQUESTS = 100
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = random.random()
+DOWNLOAD_DELAY = 0
+
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN = 16
-#CONCURRENT_REQUESTS_PER_IP = 16
+# CONCURRENT_REQUESTS_PER_DOMAIN = 100
+# CONCURRENT_REQUESTS_PER_IP = 100
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False

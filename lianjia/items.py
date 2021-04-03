@@ -10,13 +10,12 @@ from scrapy import Field, Item
 
 class LianjiaItem(Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
     district = Field()
     region = Field()
     id = Field()
-    layout = Field()
+    shi = Field()
+    ting = Field()
     floor = Field()
-    year = Field()
     size = Field()
     elevator = Field()
     renovation = Field()
